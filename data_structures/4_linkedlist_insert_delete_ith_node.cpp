@@ -200,9 +200,6 @@ Node* deleteithPos(Node* head, int i)
         toDelete->next = NULL; // isolate the node.
         delete toDelete; // delete the thing that is at the address the pointer is pointing at
         
-        // NOTE: for deleting memory pointed to by pointers - we only need
-        // to NULL the pointer itself when the pointer has been dynamically assigned with the
-        // *new* keyword.
         // toDelete = NULL; // the pointer is still pointing to that old address so clear it.
 
         return head;
@@ -235,10 +232,9 @@ Node* deleteithPos(Node* head, int i)
         toDelete->next = NULL; // isolating from other nodes - it is not not pointing to anything
         delete toDelete;
         
-        // NOTE: for deleting memory pointed to by pointers - we only need
-        // to NULL the pointer itself when the pointer has been dynamically assigned with the
-        // *new* keyword.
-        // toDelete = NULL; // the pointer is still pointing to that old address so clear it.
+        // the pointer is still pointing to that old address so clear it,
+        // if it will not be discarded upon exiting the enclosing scope.
+        // toDelete = NULL; 
 
         return listHead;
       }
