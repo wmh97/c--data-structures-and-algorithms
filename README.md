@@ -19,3 +19,4 @@ Learning and practice in C++ for a variety of data structures and algorithms. No
 * Linked List
 * Stack
 * Generic Tree
+* Graph
