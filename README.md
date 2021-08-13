@@ -8,6 +8,8 @@ Learning and practice in C++ for a variety of data structures and algorithms. No
 * Binary Search
 * Linear Search
 * Moores Majority Voting
+* Graph Traversal Depth First Search
+* Graph Traversal Breadth First Search
 
 ### Sorting:
 * Bubble Sort
