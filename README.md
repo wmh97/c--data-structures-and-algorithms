@@ -22,3 +22,4 @@ Learning and practice in C++ for a variety of data structures and algorithms. No
 * Stack
 * Generic Tree
 * Graph
+* Binary Tree
